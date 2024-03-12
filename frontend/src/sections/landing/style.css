@@ -1,0 +1,336 @@
+/* Estilos para el contenedor del anuncio */
+.anuncio {
+    width: 100%;
+    padding: 40px;
+    background-color: #121212; /* Cambia el color de fondo a un tono más oscuro */
+    text-align: center;
+    position: fixed; /* Fija el anuncio en la parte superior */
+    top: -45px;
+    left: 0;
+    z-index: 999; /* Asegura que el anuncio esté sobre cualquier otro contenido */
+    color: #ffffff; /* Cambia el color del texto a cian */
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    letter-spacing: 1px; /* Ajusta el espaciado entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade una sombra al texto */
+    border-bottom: 2px solid #00ffff; /* Agrega un borde inferior de color cian */
+    display: flex; /* Usa flexbox para centrar vertical y horizontalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+  
+  
+.numero-premiado p:last-child {
+    font-size: 40px; /* Tamaño del número premiado */
+    color: #000000; /* Color del texto */
+  }
+  
+  .numero-premiado:before {
+    content: 'NÙMERO PREMIADO';
+    position: absolute; /* Posición absoluta */
+    border: 2px solid #000000; /* Borde */
+    font-weight: bold;
+    top: -20px; /* Ajuste de posición */
+    left: 0;
+    width: 98%;
+    height: 20px;
+    background-color: #000000; /* Color del fondo */
+    border-top-left-radius: 10px; /* Bordes redondeados */
+    border-top-right-radius: 10px; /* Bordes redondeados */
+    color: #ffffff; /* Color del texto */
+    font-size: 15px; /* Tamaño del texto */
+    text-align: center; /* Alineación centrada */
+    line-height: 20px; /* Altura de línea para centrar verticalmente el texto */
+  }
+  
+  .numero-premiado {
+    width: 180px;
+    height: 80px;
+    background-color: #ffbf00;
+    margin-right: 20px; /* Separación entre los contenedores */
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    position: relative; /* Posición relativa */
+    margin-top: -20px;
+    
+  }
+  /* Estilos para el contenedor de la imagen */
+  /* Estilos para el contenedor de la imagen */
+  .imagen-container {
+    width: 100%; /* Ancho del 90% del contenedor padre */
+    max-width: 800px; /* Ancho máximo de 800px */
+    height: 500px;
+    margin-right: auto; /* Margen derecho automático para centrar horizontalmente */
+    margin-left: auto; /* Margen izquierdo automático para centrar horizontalmente */
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #ffffff;
+    margin-top: 55px;
+  }
+  
+  /* Estilos para la imagen dentro del contenedor */
+  .imagen-container img {
+    width: 100%;
+    height: 100%; /* Ajusta la altura para que la imagen ocupe todo el contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Media query para pantallas con un ancho máximo de 600px (pantallas móviles) */ 
+  
+.meta-rifa {
+    color: white; /* Color del texto */
+    font-family: 'Roboto', sans-serif; /* Fuente del texto */
+    font-size: 24px; /* Tamaño del texto */
+    text-align: center; /* Centrado horizontal */
+    margin-top: 20px; /* Margen superior para separar el texto de la imagen */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    font-weight: bold; /* Peso de la fuente */
+    }
+    
+
+  
+  .container {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin-top: 50px; /* Margen superior */
+    width:800px;
+  
+  }
+.ribbon-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Asegura que los elementos dentro de él respeten la posición relativa */
+    top: 80px; /* Ajustar la posición vertical */
+    left: 0;
+    z-index: 999;
+  }
+
+  .ribbon {
+    background-color: #FFD700; /* Color de la cinta */
+    color: #000; /* Color del texto */
+    font-size: 45px;
+    font-weight: bold;
+    padding: 10px 20px;
+    position: absolute; /* Cambiar a posición absoluta */
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 40px; /* Centra verticalmente el texto */
+    text-align: center; /* Centra horizontalmente el texto */
+    transform: rotate(0); /* No girar la cinta */
+  }
+  
+/* Estilos para la imagen del anuncio */
+.anuncio img {
+    max-width: 173px; /* Establece el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de aspecto */
+    margin-right: 55px;
+}
+
+
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin: 20px auto 0; /* Margen superior de 20px, centrado horizontalmente */
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+}
+
+.loader-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.loader-block {
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+  margin: 2px;
+  background-color: rgb(15, 250, 86);
+  box-shadow: 0 0 30px rgb(53, 143, 246);
+  animation: loader 5s infinite;
+}
+
+.loader-block:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.loader-block:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.loader-block:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.loader-block:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.loader-block:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.loader-block:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+.loader-block:nth-child(7) {
+  animation-delay: 1.4s;
+}
+
+.loader-block:nth-child(8) {
+  animation-delay: 1.6s;
+}
+
+.loader-block:nth-child(9) {
+  animation-delay: 1.8s;
+}
+
+.loader-block:nth-child(10) {
+  animation-delay: 2s;
+}
+
+.loader-block:nth-child(11) {
+  animation-delay: 2.2s;
+}
+
+.loader-block:nth-child(12) {
+  animation-delay: 2.4s;
+}
+
+.loader-block:nth-child(13) {
+  animation-delay: 2.6s;
+}
+
+.loader-block:nth-child(14) {
+  animation-delay: 2.8s;
+}
+
+.loader-block:nth-child(15) {
+  animation-delay: 3s;
+}
+
+.loader-block:nth-child(16) {
+  animation-delay: 3.2s;
+}
+
+.loader-block:nth-child(17) {
+  animation-delay: 3.4s;
+}
+
+.loader-block:nth-child(18) {
+  animation-delay: 3.6s;
+}
+
+.loader-block:nth-child(19) {
+  animation-delay: 3.8s;
+}
+
+.loader-block:nth-child(20) {
+  animation-delay: 4s;
+}
+
+.loader-block:nth-child(21) {
+  animation-delay: 4.2s;
+}
+
+.loader-block:nth-child(22) {
+  animation-delay: 4.4s;
+}
+
+.loader-block:nth-child(23) {
+  animation-delay: 4.6s;
+}
+
+.loader-block:nth-child(24) {
+  animation-delay: 4.8s;
+}
+
+@keyframes loader {
+  0% {
+      transform: scale(1);
+      box-shadow: 0 0 40px rgb(53, 143, 246);
+  }
+
+  13% {
+      transform: scale(1, 4);
+      box-shadow: 0 0 60px rgb(53, 143, 246);
+  }
+
+  26% {
+      transform: scale(1);
+      box-shadow: 0 0 40px rgb(53, 143, 246);
+  }
+}
+
+
+.footer {
+  margin-top: 10px;
+  width: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 6%, rgba(20,55,190,1) 48%, rgba(0,0,0,1) 87%);
+  padding: 20px 0; /* Espaciado interno */
+  box-sizing: border-box; /* Incluye el padding en el tamaño total */
+  text-align: center; /* Alinea el texto al centro */
+  color: #ffffff; /* Color del enlace */
+  font-weight: bold;
+ 
+}
+
+.footer-content {
+  max-width: 800px; /* Ancho máximo del contenido del footer */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.footer h2 {
+  font-size: 24px; /* Tamaño del título */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.footer ul {
+  list-style: none; /* Quita los estilos de lista predeterminados */
+  padding: 0; /* Elimina el espacio interior */
+}
+
+.footer ul li {
+  margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+}
+
+.footer a {
+  color: #ffffff; /* Color del enlace */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  transition: color 0.3s; /* Agrega una transición suave al color del texto */
+}
+
+.footer a:hover {
+  color: #00ffff; /* Cambia el color del texto al pasar el mouse */
+}
+.logo-container {
+  float: left; /* Hace que el contenedor del logo se alinee a la izquierda */
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
